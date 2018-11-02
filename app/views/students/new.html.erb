@@ -1,1 +1,10 @@
 <!-- Create your form here -->
+
+<h1>Student Form</h1>
+<form action="/students" method="post">
+  <label>INSERT FIRST NAME HERE <input type="text" id="first_name" name="first_name" placeholder=""> </label>
+  <br>
+  <label> INSERT LAST NAME HERE <input type="text" id="last_name" name="last_name" placeholder=""></label>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="submit" value="Submit Student">
+</form>
