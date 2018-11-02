@@ -1,1 +1,10 @@
 <!-- Create your form here -->
+<h1>Student Form</h1>
+  <form action="/students" method="post">
+
+    <input type="text" name="first_name" value="">
+    <input type="text" name="last_name" value="">
+    <input type="submit" name="Submit Student" value="Submit Student">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  </form>
