@@ -1,1 +1,11 @@
 <!-- Create your form here -->
+
+<h1>Student Form</h1>
+<h2>Government NaMes ONLY!</h2>
+<form action="/students" method="post">
+<label>First Name: <input type="text" id="first_name" name="first_name" placeholder="sorry no nicknames :("> </label>
+<br>
+<label>Surname: <input type="text" id="last_name" name="last_name" placeholder="lol last name"></label>
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+<input type="submit" value="Submit Student">
+</form>
